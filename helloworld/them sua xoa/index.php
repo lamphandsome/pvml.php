@@ -32,8 +32,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header clearfix">
-                    <h2 class="pull-left">Employees Details</h2>
-                    <a href="create.php" class="btn btn-success pull-right">Add New Employee</a>
+                    <h2 class="pull-left"> Students Records</h2>
+                    <a href="create.php" class="btn btn-success pull-right">Add New Students</a>
                 </div>
                 <?php
                 global $link;
@@ -60,7 +60,7 @@
                             echo "<td>".$row['salary']."</td>";
                             echo "<td>";
                             echo "<a href='read.php?id=".$row['id']."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
-                            echo "<a href='update1.php?id=".$row['id']."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
+                            echo "<a href='update.php?id=".$row['id']."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
                             echo "<a href='delete.php?id=".$row['id']."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
                             echo "</td>";
                             echo "</tr>";

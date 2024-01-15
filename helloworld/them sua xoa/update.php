@@ -45,7 +45,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])){
             $param_salary = $salary;;
             $param_id = $id;
             if (mysqli_stmt_execute($stmt)){
-                header("location:index.php");
+                header("location:index.html");
                 exit();
             }else{
                 echo "Something went Wrong. Please try again later";

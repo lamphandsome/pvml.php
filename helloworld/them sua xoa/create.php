@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
             $param_address = $address;
             $param_salary = $salary;;
             if (mysqli_stmt_execute($stmt)){
-                header("location:index.php");
+                header("location:index.html");
                 exit();
             }else{
                 echo "Something went Wrong. Please try again later";
